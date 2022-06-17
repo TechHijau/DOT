@@ -28,8 +28,10 @@ Route::controller(RajaOngkirApi::class)->group(function () {
 
 Route::controller(ProvincesApi::class)->group(function () {
     Route::get('/search/provinces', 'show');
+    Route::get('/swap/provinces', 'swap');
 });
 
 Route::controller(CitiesApi::class)->group(function () {
     Route::get('/search/cities', 'show');
+    Route::get('/swap/cities', 'swap');
 });
