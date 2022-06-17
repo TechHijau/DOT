@@ -11,8 +11,8 @@
 - jalankan program dengan perintah 'php artisan serve'
 - Untuk mengetahui apakah integrasi dengan API RajaOngkir sudah berhasil atau belum dapat dengan mengakses API yang sudah saya sediakan dan pastikan hasilnya sesuai yang di harapkan.
 - Uji coba dapat di lakukan dengan aplikasi Postman
-- API uji Provinsi 'http://127.0.0.1:8000/api/provinces' method GET
-- API uji Kota  'http://127.0.0.1:8000/api/cities' method GET
+- API uji Provinsi "http://127.0.0.1:8000/api/provinces" method GET
+- API uji Kota  "http://127.0.0.1:8000/api/cities" method GET
 
 ## Pengujian Sprint 1 soal 2
 - jalankan program dengan perintah 'php artisan serve'
@@ -21,3 +21,11 @@
 - kota "php artisan insertData kota"
 - tindakan ini akan mengganti data lama yang ada di database dengan data baru dari API RajaOngkir.
 - akan muncul pertanyaan apakah setuju atas pernyataan di atas. jika setuju ketik yes maka data akan tersimpan, jika tidak setuju ketik no maka data batal disimpan
+
+## Pengujian SPrint 1 soal 3
+- silahkan akses melalui postman.
+- untuk provinsi akses dengan url "http://127.0.0.1:8000/api/search/provinces?id={province_id}" method GET
+- untuk provinsi akses dengan url "http://127.0.0.1:8000/api/search/cities?id={city_id}" method GET
+
+## Terimakasih
+- mohon maaf bila ada kesalahan dalam penjelasan dan mendokumentasikan.
