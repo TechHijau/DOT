@@ -38,3 +38,5 @@
 - saya akan mempelajari tentang, ini jika di kasih kesempatan keterima kerja di PT DOT ini. saya akan terus meningkatkan skill pemrogramman saya.
 - jika di izinkan kedepan meski waktu pengerjaan sudah habis saya akan tambahkan point ini kedalam github ini.
 
+## Terimakasih
+- mohon maaf bila ada kesalahan dalam penjelasan dan mendokumentasikan.
