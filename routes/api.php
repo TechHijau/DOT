@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RajaOngkirApi;
-use App\Http\Controllers\ProvinsiApi;
-use App\Http\Controllers\KotaApi;
+use App\Http\Controllers\ProvincesApi;
+use App\Http\Controllers\CitiesApi;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,15 +22,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::controller(RajaOngkirApi::class)->group(function () {
-    Route::get('/provinsi', 'getProvinsi');
-    Route::get('/kota', 'getKota');
-    Route::get('/addProvinsi', 'addProvinsi');
+    Route::get('/provinces', 'getProvinces');
+    Route::get('/cities', 'getCities');
 });
 
-Route::controller(ProvinsiApi::class)->group(function () {
+Route::controller(ProvincesApi::class)->group(function () {
     Route::get('/search/provinces', 'show');
 });
 
-Route::controller(KotaApi::class)->group(function () {
-    Route::get('/search/kota', 'show');
+Route::controller(CitiesApi::class)->group(function () {
+    Route::get('/search/cities', 'show');
 });

@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Kota;
+use App\Models\Cities;
 
-class KotaApi extends Controller
+class CitiesApi extends Controller
 {
     public function show(Request $request)
     {
-        $result = Kota::where('city_id',$request->id)->get();
+        $result = Cities::where('city_id',$request->id)->get();
         return $result;
     }
 }

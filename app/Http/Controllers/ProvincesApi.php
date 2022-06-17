@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Provinsi;
+use App\Models\Provinces;
 
-class ProvinsiApi extends Controller
+class ProvincesApi extends Controller
 {
     public function show(Request $request)
     {
-        $result = Provinsi::where('province_id',$request->id)->get();
+        $result = Provinces::where('province_id',$request->id)->get();
         return $result;
     }
 }

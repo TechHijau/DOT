@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class RajaOngkirApi extends Controller
 {
-    public function getProvinsi($urlApi){
+    public function getProvinces($urlApi = "https://api.rajaongkir.com/starter/province"){
         
         $curl = curl_init();
 
@@ -36,7 +36,7 @@ class RajaOngkirApi extends Controller
         }
     }
 
-    public function getKota($urlApi){
+    public function getCities($urlApi = "https://api.rajaongkir.com/starter/city"){
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
