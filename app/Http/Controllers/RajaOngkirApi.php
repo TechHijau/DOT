@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class RajaOngkirApi extends Controller
 {
-    public function getProvinsi(){
+    public function getProvinsi($urlApi){
         
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.rajaongkir.com/starter/province",
+            CURLOPT_URL => $urlApi,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -36,12 +36,11 @@ class RajaOngkirApi extends Controller
         }
     }
 
-    public function getKota(){
+    public function getKota($urlApi){
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://api.rajaongkir.com/starter/city",
-            // CURLOPT_URL => "https://api.rajaongkir.com/starter/city?&province=$id",
+            CURLOPT_URL => $urlApi,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
