@@ -13,3 +13,11 @@
 - Uji coba dapat di lakukan dengan aplikasi Postman
 - API uji Provinsi 'http://127.0.0.1:8000/api/provinces' method GET
 - API uji Kota  'http://127.0.0.1:8000/api/cities' method GET
+
+## Pengujian Sprint 1 soal 2
+- jalankan program dengan perintah 'php artisan serve'
+- untuk memasukkan data provinsi atau kota ke dalam database dapat dengan mengetikkan perintah di termintal "php artisan insertData {provinsi/kota}"
+- Provinsi "php artisan insertData provinsi"
+- kota "php artisan insertData kota"
+- tindakan ini akan mengganti data lama yang ada di database dengan data baru dari API RajaOngkir.
+- akan muncul pertanyaan apakah setuju atas pernyataan di atas. jika setuju ketik yes maka data akan tersimpan, jika tidak setuju ketik no maka data batal disimpan
