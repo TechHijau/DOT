@@ -12,7 +12,7 @@
 - jalankan "php artisan migrate" untuk membuat database.
 - ketikkan printah "php artisan serve" untuk menjalankan
 
-## Pengujian Sprint 1 Soal 1
+## Pengujian Sprint 2 Soal 1
 - dalam soal sumber data pencarian saya membuat beberapa konfigurasi yaitu.
 - dapat mengakses data dari database atau dari API dengan penambahan from di URL.
     * contoh from db
@@ -27,8 +27,14 @@
         * kota "http://127.0.0.1:8000/api/swap/cities?id=2"
 - sebagai perhatian karena soal ini terkait dengan soal nomor 2 maka untuk login terlebih dahulu dan di postment di tab authorization pastikan type = bearer token dan isi token sesuai token user saat login
 
-## Pengujian Sprint 1 Soal 2
+## Pengujian Sprint 2 Soal 2
 - fungsi register dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/register" method post
 - fungsi login dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/login" mehod post
 - fungsi logout dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/logout" mehod post
 - sebagai perhatian bahwa fungsi logout dan juga fungsi yang terdapat di soal nomor 1 di autentifikasi jadi untuk mengakses nya pada postman di tab authorization pastikan type = bearer token dan isi token sesuai token user saat login
+
+## Pengujian Sprint 2 Soal 3
+- untuk soal sprint 2 soal 3 saya belum bisa menyelesaikan, saya harus mempelajari tentang testing pada laravel.
+- saya akan mempelajari tentang, ini jika di kasih kesempatan keterima kerja di PT DOT ini. saya akan terus meningkatkan skill pemrogramman saya.
+- jika di izinkan kedepan meski waktu pengerjaan sudah habis saya akan tambahkan point ini kedalam github ini.
+
