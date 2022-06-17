@@ -16,13 +16,19 @@
 - dalam soal sumber data pencarian saya membuat beberapa konfigurasi yaitu.
 - dapat mengakses data dari database atau dari API dengan penambahan from di URL.
     * contoh from db
-        * provinsi "http://127.0.0.1:8000/api/swap/provinces?from=db&id=2"
-        * kota"http://127.0.0.1:8000/api/swap/cities?from=db&id=2" 
+        * provinsi "http://127.0.0.1:8000/api/swap/provinces?from=db&id=2" method get
+        * kota"http://127.0.0.1:8000/api/swap/cities?from=db&id=2" method get 
     * contoh from API
-        * provinsi "http://127.0.0.1:8000/api/swap/provinces?from=api&id=2"
-        * kota "http://127.0.0.1:8000/api/swap/cities?from=api&id=2"
+        * provinsi "http://127.0.0.1:8000/api/swap/provinces?from=api&id=2" method get
+        * kota "http://127.0.0.1:8000/api/swap/cities?from=api&id=2" method get
 - jika from bukan api atau db maka akan mengambik konfigurasi selanjutnya yaitu bila pc terkoneksi internet maka akan mengambil data API
     * contoh link saat koneksi internet hidup
         * provinsi "http://127.0.0.1:8000/api/swap/provinces?id=2"
         * kota "http://127.0.0.1:8000/api/swap/cities?id=2"
 - sebagai perhatian karena soal ini terkait dengan soal nomor 2 maka untuk login terlebih dahulu dan di postment di tab authorization pastikan type = bearer token dan isi token sesuai token user saat login
+
+## Pengujian Sprint 1 Soal 2
+- fungsi register dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/register" method post
+- fungsi login dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/login" mehod post
+- fungsi logout dapat di akses dari postmen melalui link  "http://127.0.0.1:8000/api/logout" mehod post
+- sebagai perhatian bahwa fungsi logout dan juga fungsi yang terdapat di soal nomor 1 di autentifikasi jadi untuk mengakses nya pada postman di tab authorization pastikan type = bearer token dan isi token sesuai token user saat login
